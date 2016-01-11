@@ -1,0 +1,336 @@
+//
+// Structure Global
+// --------------------------------------------------
+
+section { position: relative; padding:60px 0 60px 0; }
+
+section .container h2 {text-transform: uppercase;}
+
+// Is your navbar fixed?
+body { padding-top: 70px; }
+
+
+#features .col-md-4,
+#pricing .col-md-4,
+#company .col-md-4 { text-align: center; }
+
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: @SuperGroteskWeb-Medium;
+}
+
+
+//
+// Header
+// --------------------------------------------------
+.bg-brand { background: @brand-primary; color: @gray-lighter; }
+.navbar-brand.img { padding: @navbar-brand-padding-vertical @navbar-padding-horizontal; }
+
+
+.navbar-default .navbar-nav>li>a {font-family:@SuperGroteskWeb-Medium;font-size:18px;padding: 48px 25px 20px 25px; }
+
+.navbar-default .navbar-nav>li>a:focus {color:inherit;}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav a.active {color:@brand-primary;}
+
+
+
+
+
+
+
+//
+// Footer
+// --------------------------------------------------
+
+footer .container {border-top:1px solid @gray;padding-top:2em;}
+footer .altair { float: left; font-size: 0.9em; height: 26px; width: 600px; }
+footer .company { font-size: 0.9em; height: 20px; margin-bottom: 5px; width: 960px; word-spacing: 78px; }
+footer .company a:hover { background-position: 20px -20px; }
+footer .company a { background: url(../img/bg_footer_logo.png) no-repeat 20px 0; display: block; padding-top: 2px; height: 18px; width: 165px; }
+footer .social { float: right; height: 26px; text-align: right; width: 234px; }
+footer .social a { display: block;
+
+display: inline-block;
+*display: inline;
+*zoom: 1;
+ height: 26px; overflow: hidden; padding: 0 5px; }
+footer .social a:hover img { position: relative; top: -26px; }
+footer a { color: #fff; }
+footer a:hover { color: #ABE1FA; }
+
+footer {padding-bottom:2em;}
+//
+// Row Banding
+// --------------------------------------------------
+
+// dark to light - 5 levels
+.bg-gray-darker { background: @gray-darker; color: @gray-lighter; }
+.bg-gray-dark { background: @gray-dark; color: @gray-lighter; }
+.bg-gray { background: @gray; }
+.bg-gray-light { background: @gray-light; }
+.bg-gray-lighter { background: @gray-lighter; }
+.bg-image { background: url('') no-repeat top center; -webkit-background-size: cover; -moz-background-size: cover; 
+-o-background-size: cover; background-size: cover;
+
+  // background fixed and background cover don't play nicely together on iOS. So background is fixed only on desktops.
+  /* XXS */ @media only screen and (min-width : 320px)  {} // background isn't fixed here.
+  /* XS  */ @media only screen and (min-width : 480px)  {} // background still isn't fixed here.
+  /* SM  */ @media only screen and (min-width : 768px)  {} // background still isn't fixed here.
+  /* MD  */ @media only screen and (min-width : 992px)  {background-attachment: fixed;} // Ok NOW the background is fixed.
+  /* LG  */ @media only screen and (min-width : 1200px) {} // background is STILL fixed here.
+
+ }
+
+
+//
+// Jumbotron
+// --------------------------------------------------
+.jumbotron { background: url('../img/envision-jumbotron.jpg') no-repeat top center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; 
+text-align:center;
+margin-bottom:0;
+
+
+
+
+  // background fixed and background cover don't play nicely together on iOS. So background is fixed only on desktops.
+  /* XXS */ @media only screen and (min-width : 320px)  {} // background isn't fixed here.
+  /* XS  */ @media only screen and (min-width : 480px)  {} // background still isn't fixed here.
+  /* SM  */ @media only screen and (min-width : 768px)  {} // background still isn't fixed here.
+  /* MD  */ @media only screen and (min-width : 992px)  {background-attachment: fixed;} // Ok NOW the background is fixed.
+  /* LG  */ @media only screen and (min-width : 1200px) {} // background is STILL fixed here.
+
+
+
+ }
+
+.scroll-btn { display: block; width: 35px; height: 35px; background: url('../img/scroll-arrow.png') no-repeat top center; margin: -60px auto 0 auto;cursor:pointer; }
+
+.scroll-btn.down {margin-top:-60px;
+
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+}
+
+
+.jumbotron h1 {font-size:32px;font-family:@SuperGroteskWeb;}
+.jumbotron h1 span {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+background:@gray;
+color:#fff;
+padding:5px 20px;
+margin:10px;
+}
+
+.jumbotron .container {position:relative;height: 500px;}
+.jumbotron .btn {position:absolute;right:0;bottom:0;}
+
+.jumbotron .container .text {margin-top:160px;}
+
+
+//
+// Product
+// --------------------------------------------------
+section#product {}
+
+//
+// Quote
+// --------------------------------------------------
+
+blockquote{position:relative;border:none;padding:0;margin:50px 0;padding: 0 40px;font-size:24px;}
+blockquote p {display: inline;}
+blockquote p:before{display:block;padding-left:10px;content:"\201C";font-size:120px;position:absolute;left:-20px;top:-30px;}
+blockquote p span {display: inline-block;
+*display: inline;
+*zoom: 1;
+ padding-left:10px;font-size:120px;position:absolute;bottom:25px;
+line-height: 12px;
+
+}
+
+
+blockquote cite{font-style:normal;display:block;margin-top:1em;}
+blockquote cite:before{content:"\2014 \2009";}
+
+//
+// Features
+// --------------------------------------------------
+
+section#features {padding-bottom:80px;}
+
+section#features h3 {color:@brand-primary;}
+
+//
+// Multi Platform
+// --------------------------------------------------
+
+section#multi-platform {padding:20px 0 0 0;}
+
+#iphone { margin-top: -70px;text-align:right; }
+
+#iphone img {display: inline-block;
+*display: inline;
+*zoom: 1;
+margin-right:25px;
+}
+//
+// Demo Gallery
+// --------------------------------------------------
+
+#demo .owl-carousel .owl-item a {color:inherit;text-decoration:none!important;}
+#demo .owl-dots {display: none!important;}
+#demo .owl-controls {position:absolute;top:16%;width:100%;}
+
+#demo .owl-nav .owl-prev, #demo .owl-nav .owl-next {width:30px;height:50px;font-size:0;}
+
+#demo .owl-nav .owl-prev {left:-50px;position:absolute;background: transparent url('../img/carousel-arrows.png') no-repeat -10px 0;}
+#demo .owl-nav .owl-prev:hover {background-position:-10px -50px ;}
+
+#demo .owl-nav .owl-next {right:-50px;position:absolute;background: transparent url('../img/carousel-arrows.png') no-repeat -62px 0;}
+#demo .owl-nav .owl-next:hover {background-position:-62px -50px ;}
+
+
+
+
+//
+// Pricing
+// --------------------------------------------------
+
+#pricing .row {margin-bottom:22px;}
+
+#pricing .row .col-md-4 {border-right:1px solid @gray;}
+#pricing .row .col-md-4:last-child {border:none;}
+#pricing h2 {font-size:21px;}
+#pricing h3 {font-size:34px;}
+#pricing h3 small {display: block;color:@brand-primary;font-family:@SuperGroteskWeb;}
+//
+// Company
+// --------------------------------------------------
+
+section#company {background-image:url('../img/envision-company.jpg');}
+
+section#company a {color:inherit;font-family:@SuperGroteskWeb-Medium;}
+section#company a:hover {text-decoration: none; color:@brand-primary;}
+section#company .col-md-4 p {padding:0 10%;}
+//
+// Request Access
+// --------------------------------------------------
+section#access {}
+.scroll-btn.up {margin-top:-80px;}
+
+section#access .container {padding-top:50px;}
+textarea.hs-input {height:100px;}
+
+section#access .submitted-message {text-align:center;background:#fff;padding:2em;font-size:18px;color:@gray-darker;}
+.bootstrap .hs-form.stacked .form-columns-2 {
+    margin-bottom: 10px;
+}
+.bootstrap .hs-form.stacked .form-columns-2 .hs-form-field:last-child {text-align:right;}
+.bootstrap .hs-form textarea  {width:99.9%!important;}
+
+
+.bootstrap .hs-form .actions {
+    padding: 0 10px 18px 0;
+}
+
+
+//
+// Media Query
+// --------------------------------------------------
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+#pricing .row .col-md-4 {
+    border-right: none!important;
+}
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+
+
+
+
+}
+
+
+
+
+/* Portrait phones and smaller */
+@media (max-width: @screen-sm-min) {
+
+
+form.hs-form .hs_note__c .input {
+    margin-right: 0!important;
+}
+
+form.hs-form .form-columns-2 .hs-form-field .hs-input, form.hs-form .form-columns-3 .hs-form-field .hs-input, form.hs-form .input textarea.hs-input {
+    width: 100%!important;
+}
+
+
+
+
+
+.jumbotron .container .text {margin-top: 60px;}
+
+.jumbotron .container {height:400px;}
+.navbar-brand>img {
+    display: block;
+    width: 160px;
+    height: auto;
+}
+
+#pricing .row .col-md-4 {border-right: none!important;}
+
+blockquote * {font-size:21px;}
+
+footer div {width:100%!important;float:none!important;}
+footer .social {text-align:left;margin-top:2em;}
+#demo .owl-carousel {margin:0 auto;width:80%;}
+#iphone {border-bottom:1px solid #fff;text-align:center;overflow:hidden;}
+#iphone img {margin-right:0;}
+.navbar-default .navbar-nav>li>a {padding: 10px;}
+
+#demo .owl-carousel {margin:0 auto;width:80%!important;}
+
+
+
+blockquote p span {
+    bottom: 50px;
+
+}
+
+
+
+}
+
+
+
+
+
+
+

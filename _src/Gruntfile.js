@@ -4,6 +4,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+/*
  
       uglify: {
         plugins: {
@@ -16,16 +17,18 @@ module.exports = function(grunt) {
         }
     },
 
- 
+ */
+
     less: {
       development: {
         options: {
           paths: ["less/"],
-        compress: true,
+        compress: false,
         cleancss: true,
+        //banner: "Test",
         },
         files: {
-          "../css/styles.css": "less/styles.less"
+          "../css/main.css": "less/styles.less"
         }
       },
     },
@@ -137,7 +140,7 @@ ftp 21/udp File Transfer [Control]
 
   // Default task(s).
  // grunt.registerTask('default', ['uglify','less', 'sftp-deploy']);
-    grunt.registerTask('default', ['uglify','less']);
+    grunt.registerTask('default', ['less']);
 
  
 };

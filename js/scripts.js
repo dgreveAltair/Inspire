@@ -84,4 +84,18 @@ $( window ).resize( function(){
 
 
 
+
+
+
+//http://jsfiddle.net/apougher/ydcMQ/
+// Turn off on mobile
+    $(".dropdown").hover(
+        function() { $('.dropdown-menu', this).stop().fadeIn("fast");
+        },
+        function() { $('.dropdown-menu', this).stop().fadeOut("fast");
+    });
+
+
+
+//----------------------End Document
 });

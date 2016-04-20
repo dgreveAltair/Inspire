@@ -84,16 +84,68 @@ $( window ).resize( function(){
 
 
 
+// Add some invisible elements with Bootstrap CSS visibile utility classes
+$( "body" ).append( "<div style='visibility:hidden;' class='viewport-check'><span class='visible-xs-block'></span><span class='visible-sm-block'></span><span class='visible-md-block'></span><span class='visible-lg-block'></span></div>" );
+
+// Checks if the span is set to display blcok via CSS
+function checkIfBlock (target) {
+    var target = $(target).css('display') == 'block';
+    return target;
+}
+
+// Set some variables to use with the if checks below
+var mediaQueryXs = checkIfBlock('.viewport-check .visible-xs-block');
+var mediaQuerySm = checkIfBlock('.viewport-check .visible-sm-block');
+var mediaQueryMd = checkIfBlock('.viewport-check .visible-md-block');
+var mediaQueryLg = checkIfBlock('.viewport-check .visible-lg-block');
+
+// Debug
+console.log("extra small " + mediaQueryXs);
+console.log("small " + mediaQuerySm);
+console.log("medium " + mediaQueryMd);
+console.log("large " + mediaQueryLg);
+
+// Now check if the media query is enabled then add a unique class to the body tag
+
+// Are you extra-small?
+if ( mediaQueryXs == true ) {
+        $("body").toggleClass( "media-query-xs" );
+}
+
+// Are you small?
+if ( mediaQuerySm == true ) {
+        $("body").toggleClass( "media-query-sm" );
+}
+
+// Are you medium?
+if ( mediaQueryMd == true ) {
+        $("body").toggleClass( "media-query-md" );
+}
+
+// Are you large?
+if ( mediaQueryLg == true ) {
+        $("body").toggleClass( "media-query-lg" );
+}
 
 
 
-//http://jsfiddle.net/apougher/ydcMQ/
-// Turn off on mobile
+
+
+if ( !mediaQueryXs == true ) {
+
+    //http://jsfiddle.net/apougher/ydcMQ/
+    // Turn off on mobile
     $(".dropdown").hover(
         function() { $('.dropdown-menu', this).stop().fadeIn("fast");
         },
         function() { $('.dropdown-menu', this).stop().fadeOut("fast");
     });
+
+}
+
+
+
+
 
 
 

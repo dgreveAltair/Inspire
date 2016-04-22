@@ -25,7 +25,7 @@ module.exports = function(grunt) {
           paths: ["less/"],
         compress: false,
         cleancss: true,
-        banner: "/*\r\n--------------------------\r\n-Test\r\n-sdfsd\r\n-sfdss\r\n-sdfsdf\r\n--------------------------\r\n*/",
+        banner: "/*\r\n--------------------------\r\nEnvision Main Stylesheet\r\n- Custom theme of Bootstrap 3\r\n- sfdss\r\n- sdfsdf\r\n--------------------------\r\n*/",
         },
         files: {
           "../css/main.css": "less/styles.less"

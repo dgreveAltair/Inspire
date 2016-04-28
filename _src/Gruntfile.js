@@ -1,11 +1,11 @@
 module.exports = function(grunt) {
- 
+
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
 /*
- 
+
       uglify: {
         plugins: {
            src: ['js/plugins.js'], //input
@@ -28,14 +28,14 @@ module.exports = function(grunt) {
         banner: "/*\r\n--------------------------\r\nEnvision Main Stylesheet\r\n- Custom theme of Bootstrap 3\r\n- sfdss\r\n- sdfsdf\r\n--------------------------\r\n*/",
         },
         files: {
-          "../css/main.css": "less/styles.less"
+          "../css/bootstrap-envision.css": "less/styles.less"
         }
       },
     },
-    
 
-    
-  /*  
+
+
+  /*
 
 
 
@@ -63,10 +63,10 @@ module.exports = function(grunt) {
 
 
 */
-    
-/*    
 
-FTP PORTS 
+/*
+
+FTP PORTS
 
 ftps-data 989/tcp ftp protocol, data, over TLS/SSL
 ftps-data 989/udp ftp protocol, data, over TLS/SSL
@@ -129,7 +129,7 @@ ftp 21/udp File Transfer [Control]
 
   });
     // END GRUNT
- 
+
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -142,5 +142,5 @@ ftp 21/udp File Transfer [Control]
  // grunt.registerTask('default', ['uglify','less', 'sftp-deploy']);
     grunt.registerTask('default', ['less']);
 
- 
+
 };

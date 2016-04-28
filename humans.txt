@@ -1,26 +1,32 @@
-/* TEAM */
+/*
+TEAM
+--------------------------------------
+*/
+Web designer: Lena David
+Company: Altair - http://www.altair.com/
+From: Michigan
 
-	Web designer: Lena David
-	Company: Altair - http://www.altair.com/
-	From: Michigan
+UI developer: Jacob Lett
+Company: Altair - http://www.altair.com/
+From: Michigan
 
-	UI developer: Jacob Lett
-	Company: Altair - http://www.altair.com/
-	From: Michigan
+/*
+Technology
+--------------------------------------
+*/
+Uses Grunt to compile Less and javascript
+See _src folder in this directory
 
-/* Technology */
+Bootstrap 3 CSS Framework
+Owl Carousel
+Wow CSS animations
+Scroll to Id
 
-	Uses Grunt to compile Less and javascript
-	See _src folder in this directory
-
-	Bootstrap 3 CSS Framework
-	Owl Carousel
-	Wow CSS animations
-	Scroll to Id
-
-/* SITE */
-
-	Last update:2016/01/08
-	Language: English
-	Doctype:HTML5
-	IDE: Sublime Text
+/*
+SITE
+--------------------------------------
+*/
+Last update:2016/01/08
+Language: English
+Doctype:HTML5
+IDE: Sublime Text

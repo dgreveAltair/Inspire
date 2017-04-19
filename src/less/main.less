@@ -1,0 +1,319 @@
+
+//
+// Font Mixins
+// --------------------------------------------------
+
+.font-bold {
+    font-family: @font-base;
+    font-weight: 600;
+}
+
+
+.font-bold-italic {
+    font-family: @font-base;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+.font-extra-bold {
+    font-family: @font-base;
+    font-weight: 700;
+}
+
+
+
+//
+// Structure Global
+// --------------------------------------------------
+
+section { position: relative; padding:40px 0 40px 0; }
+
+
+// Is your navbar fixed?
+body { padding-top: 70px; }
+
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navbar-default .navbar-nav > li > a {
+  .font-bold;
+}
+
+
+//
+// Header
+// --------------------------------------------------
+.bg-brand { background: @brand-primary; color: @gray-lighter; }
+.navbar-brand.img { padding: @navbar-brand-padding-vertical @navbar-padding-horizontal; }
+
+
+.navbar-default .navbar-nav>li>a {font-size:18px;padding: 42px 20px 20px 20px; }
+
+.navbar-default .navbar-nav>li>a:focus {color:inherit;}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav a.active {color:@brand-primary;}
+
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus
+{
+  background:#fff;
+}
+
+.navbar-btn {
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
+
+//
+// Footer
+// --------------------------------------------------
+
+footer .container {border-top:1px solid @gray;padding-top:2em;}
+footer .altair { float: left; font-size: 0.9em; height: 26px; width: 600px; }
+footer .company { font-size: 0.9em; height: 20px; margin-bottom: 5px; width: 960px; word-spacing: 78px; }
+footer .company a:hover { background-position: 20px -20px; }
+footer .company a { background: url(../img/bg_footer_logo.png) no-repeat 20px 0; display: block; padding-top: 2px; height: 18px; width: 165px; }
+footer .social { float: right; height: 26px; text-align: right; width: 234px; }
+footer .social a { display: block;
+
+display: inline-block;
+*display: inline;
+*zoom: 1;
+ height: 26px; overflow: hidden; padding: 0 5px; }
+footer .social a:hover img { position: relative; top: -26px; }
+footer a { color: #fff; }
+footer a:hover { color: #ABE1FA; }
+
+footer {padding-bottom:2em;}
+
+
+//
+// Row Banding
+// --------------------------------------------------
+
+// dark to light - 5 levels
+.bg-gray-darker { background: @gray-darker; color: @gray-lighter; }
+.bg-gray-dark { background: @gray-dark; color: @gray-lighter; }
+.bg-gray { background: @gray; }
+.bg-gray-light { background: @gray-light; }
+.bg-gray-lighter { background: @gray-lighter; }
+.bg-image {
+
+
+background-position: center center;
+background-repeat: no-repeat;
+-webkit-background-size: cover; -moz-background-size: cover; 
+-o-background-size: cover; background-size: cover;
+
+  // background fixed and background cover don't play nicely together on iOS. So background is fixed only on desktops.
+  /* XXS */ @media only screen and (min-width : 320px)  {} // background isn't fixed here.
+  /* XS  */ @media only screen and (min-width : 480px)  {} // background still isn't fixed here.
+  /* SM  */ @media only screen and (min-width : 768px)  {} // background still isn't fixed here.
+  /* MD  */ @media only screen and (min-width : 992px)  {background-attachment: fixed;} // Ok NOW the background is fixed.
+  /* LG  */ @media only screen and (min-width : 1200px) {} // background is STILL fixed here.
+
+ }
+
+
+//
+// Jumbotron
+// --------------------------------------------------
+
+
+.jumbotron {margin: 0px;position: relative;padding: 0;}
+.jumbotron .btn {
+ position: absolute;
+   top: 30%;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   width: 200px;
+}
+
+#tagline {background-color: rgba(255,255,255, 0.7);
+position: absolute;
+bottom: 0px;
+width: 100%;
+}
+
+#tagline h1 {
+.font-extra-bold;
+font-size: 36px;
+text-align: center;
+}
+
+.jumbotron p {margin: 0px;}
+
+
+
+//
+// Blue Features
+// --------------------------------------------------
+#blue-features {text-align: center;}
+#blue-features h3 {border-top: 1px solid #fff;padding-top: 22px;font-size: 18px;}
+#blue-features h3:first-child {border: none;padding-top: 0px;margin-top: 0px;}
+#blue-features p:last-child {margin-bottom: 0px;}
+
+
+
+//
+// Key Features
+// --------------------------------------------------
+#key-features h3 {
+  font-size: 18px;
+  color: @brand-primary;
+}
+#key-features p {padding: 0 10%;}
+
+#key-features h2 {font-size: 30px;}
+
+
+
+//
+// Pricing
+// --------------------------------------------------
+
+#pricing .row {margin-bottom:22px;}
+
+#pricing .row .col-md-4 {
+  border-right: 10px solid @gray-lighter;
+  height: 300px;
+  background: #fff;
+  text-align: center;
+  padding:40px ;
+}
+#pricing .row .col-md-4:last-child {border: none;}
+#pricing h2 {font-size:22px;color:@brand-primary;margin: 0px 0 40px 0;}
+#pricing h3 {font-size:20px;text-transform: uppercase;}
+#pricing .btn {position: absolute;bottom: 22px;margin: 0 auto;left: 0;right: 0;
+width: 150px;
+}
+#pricing p {font-size:12px;}
+
+
+//
+// Video
+// --------------------------------------------------
+
+
+.video {position: relative;padding: 0px;}
+.video a {color: #fff;}
+.video-desc {position: absolute;bottom: 20px;}
+.video-title {position: absolute;top: 20px;margin-top: 0px;}
+.video-btn {
+/*
+http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-div
+*/
+  position: absolute;top:0;bottom: 0;
+margin: auto;
+  left: 0;right: 0;width: 115px;height: 115px;}
+
+
+
+@media (min-width: 500px) {
+.video-desc {bottom: 40px;}
+.video-title {top: 40px;}
+}
+
+
+
+//
+// Company
+// --------------------------------------------------
+
+
+
+.company-section {
+   background-color: #eeeeee;
+  padding: 0px;
+    text-align: left;
+    background-repeat: no-repeat;
+
+}
+
+#company {    
+  background-image: url(https://dummyimage.com/1000x400/000/fff);
+
+
+      background-position: top left;
+    background-size:  contain;
+}
+#about-altair {    
+  background-image: url(../../img/play-button.svg?v=1), url(https://dummyimage.com/1000x400/000/fff);
+      background-position: right 220px top 50%, top right;
+    background-size: 102px 102px, contain;
+}
+
+.company-section .col-md-6 {
+    background-color: #eeeeee;
+ 
+}
+
+
+
+/* Large desktops and laptops */
+@media (max-width: 1000px) {
+
+.company-section {background: none!important;}
+
+
+
+
+}
+
+
+
+//
+// Media Query
+// --------------------------------------------------
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+
+
+
+
+}
+
+
+
+
+/* Portrait phones and smaller */
+@media (max-width: @screen-sm-min) {
+
+
+
+
+
+
+
+}
+
+
+
+
+
+

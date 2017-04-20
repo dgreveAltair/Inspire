@@ -25,36 +25,35 @@ $("#company-icons a").hover(function(){
 
 
 
-// Demo gallery slideshow
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:15,
-    nav:true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
-})
 
-
-
-  //hide box
-new WOW().init();
-
-// http://manos.malihu.gr/page-scroll-to-id/
 
 
 $("a[href*='#'], a[href*='#top'], a[href*='#product'], a[href*='#features'], a[href*='#demo'], a[href*='#pricing'], a[href*='#company'], a[href*='#access']").mPageScroll2id({
-    offset:50
+    offset:80
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -62,6 +61,10 @@ $("a[href*='#'], a[href*='#top'], a[href*='#product'], a[href*='#features'], a[h
 var w = 0;
 $( window ).load( function(){
     w = $( window ).width();
+
+    
+
+
 });
 
 $( window ).resize( function(){
@@ -131,7 +134,7 @@ if ( mediaQueryLg == true ) {
 
 
 
-if ( !mediaQueryXs == true ) {
+if ( mediaQueryLg == true ) {
 
     //http://jsfiddle.net/apougher/ydcMQ/
     // Turn off on mobile
@@ -148,6 +151,40 @@ if ( !mediaQueryXs == true ) {
 
 
 
+   /*
+     * Replace all SVG images with inline SVG
+     */
+$(document).ready(function() {
+    $('img[src$=".svg"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+            // Get the SVG tag, ignore the rest
+            var $svg = jQuery(data).find('svg');
+
+            // Remove any invalid XML tags
+            $svg = $svg.removeAttr('xmlns:a');
+
+            // Loop through IMG attributes and apply on SVG
+            $.each(attributes, function() {
+                $svg.attr(this.name, this.value);
+            });
+
+            // Replace IMG with SVG
+            $img.replaceWith($svg);
+        }, 'xml');
+    });
+});
+
+
 
 //----------------------End Document
 });
+
+
+
+
+
+

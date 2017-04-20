@@ -195,9 +195,9 @@ If a picture looks blurry on a retina device you can add a high resolution like 
 <source srcset="img/blog-post-1000x600-2.jpg, blog-post-1000x600-2@2x.jpg 2x" media="(min-width: 768px)">
  -->
       <picture>
-        <source srcset="img/carousel-xxl-2000x700.jpg" media="(min-width: 960px)">
-        <source srcset="https://dummyimage.com/1020x700/000/fff" media="(min-width: 576px)">
-        <img srcset="https://dummyimage.com/800x800/000/fff" alt="responsive image" class="img-responsive">
+        <source srcset="img/carousel-2000x800.jpg" media="(min-width: 960px)">
+        <source srcset="img/carousel-1000x600.jpg" media="(min-width: 576px)">
+        <img srcset="img/carousel-800x600.jpg" alt="responsive image" class="img-responsive">
       </picture>
 
 
@@ -343,9 +343,9 @@ HPC Appliance SECTION
 <section id="hpc-appliance" class="video" >
   <a href="" >
       <picture>
-        <source srcset="https://dummyimage.com/2000x700/000/fff" media="(min-width: 960px)">
-        <source srcset="https://dummyimage.com/1020x700/000/fff" media="(min-width: 576px)">
-        <img srcset="https://dummyimage.com/800x800/000/fff" alt="responsive image" class="img-responsive">
+        <source srcset="img/video-hpc-1680x720.jpg" media="(min-width: 960px)">
+        <source srcset="img/video-hpc-1080x720.jpg" media="(min-width: 576px)">
+        <img srcset="img/video-hpc-960x720.jpg" alt="responsive image" class="img-responsive">
       </picture>
 
 
@@ -414,9 +414,9 @@ Cloud Bursting SECTION
     <a href="">
 
       <picture>
-        <source srcset="https://dummyimage.com/2000x700/000/fff" media="(min-width: 960px)">
-        <source srcset="https://dummyimage.com/1020x700/000/fff" media="(min-width: 576px)">
-        <img srcset="https://dummyimage.com/800x800/000/fff" alt="responsive image" class="img-responsive">
+        <source srcset="img/video-cloud-1680x720.jpg" media="(min-width: 960px)">
+        <source srcset="img/video-cloud-1080x720.jpg" media="(min-width: 576px)">
+        <img srcset="img/video-cloud-960x720.jpg" alt="responsive image" class="img-responsive">
       </picture>
 
 
@@ -464,11 +464,17 @@ Company SECTION
   </div>
   <!-- /.col-md-6 -->
   <div class="col-md-6">
-    <h2>About PBS Works</h2>
+
+  <div class="p-2">
+    
+        <h2>About PBS Works</h2>
 
 <p>PBS Works™ is the market leader in comprehensive, secure workload management for high-performance computing (HPC) and cloud environments. This market-leading workload management suite allows HPC users to simplify their environment while optimizing system utilization, improving application performance, and improving ROI on hardware and software investments. PBS Works is the preferred solution for many of the planet’s largest, most complex clusters and supercomputers – and is the choice for smaller organizations needing HPC solutions that are easy to adopt and use. </p>
 
 <p>Backed by Altair, a global software leader, PBS Works offers unparalleled service and support from a partner companies can rely on.</p>
+
+
+  </div>
 
 
   </div>
@@ -522,7 +528,7 @@ Company SECTION
                 <div class="p-2">
                   
 
-<h2 class="color-text">ABOUT ALTAIR</h2>
+<h4 class="color-text">ABOUT ALTAIR</h4>
 
 <p>Our vision is to transform the way organizations design products and make decisions by applying simulation, predictive analytics, and optimization throughout the product lifecycle</p>
 
@@ -572,8 +578,8 @@ Company SECTION
 Contact SECTION
 ===============================
  -->
- <section id="contact" class="bg-gray-dark">
- <a href="#top" class="scroll-btn up"></a>
+ <section id="contact" class="bg-gray">
+
   <div class="container">
 
 
@@ -581,6 +587,9 @@ Contact SECTION
 
 
 
+<div class="row"> 
+
+<div class="col-md-6" id="form-col-1">  
 
 <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
@@ -589,9 +598,22 @@ Contact SECTION
 <script>
   hbspt.forms.create({ 
     portalId: '47251',
+    css: '',
     formId: '9cb3ab5b-efc6-49ea-a264-c8998d1129d2'
   });
 </script>
+
+
+</div>
+<div class="col-md-6" id="form-col-2">
+  
+
+</div>
+
+</div>
+
+
+
 
 
 
@@ -613,13 +635,51 @@ FOOTER
 <footer class="bg-gray-dark">
 <div class="container">
 
-            <div class="company">
-                <a href="http://www.altair.com" target="_blank">An Company</a>
+
+    <img src="img/Altair_PBSWorks_WHITE_horizontal.svg" alt="" width="200">
+
+
+
+<hr>  
+
+
+<div class="row"> 
+
+<div class="col-md-8">  
+
+<p class="boilerplate"><a href="http://www.altair.com/">Altair</a> | <a href="http://www.altairhyperworks.com/">HyperWorks</a> | <a href="http://www.altairproductdesign.com/">ProductDesign</a> | <a href="http://www.solidthinking.com/">solidThinking</a> | <a href="http://www.altairhyperworks.com/APAHome.aspx">Altair Partner</a><br>  
+<a href="#contact">Contact</a> | <a id="LegalLink" onclick="popupsized(this.href, 'yes', '600', '700');return false;" href="http://www.altair.com/popup_privacy.htm">Legal</a> | Trademarks © Copyright 2017 Altair Engineering, Inc. All Rights Reserved. PBS Works is a division of Altair.</p>
+
+
+</div>
+<!-- /.col-md-8 -->
+<div class="col-md-4">  
+
+            <div class="social">
+                Find us on
+                <a href="http://www.facebook.com/solidThinking" target="_blank" title="Facebook">
+                    <img src="img/footer-facebook.svg" height="15" width="15"  alt="Facebook" class="svg"></a>
+                <a href="http://twitter.com/solidThinking" target="_blank" title="Twitter">
+                    <img src="img/footer-twitter.svg"  height="15" width="15"  alt="Twitter" class="svg"></a>
+                <a href="http://www.linkedin.com/groups/solidThinking-Community-4872249" target="_blank" title="LinkedIn">
+                    <img src="img/footer-linkedin.svg"  height="15" width="15"  alt="LinkedIn" class="svg"></a>
+                <a href="http://www.youtube.com/user/solidthinking" target="_blank" title="YouTube">
+                    <img src="img/footer-youtube.svg"  height="15" width="15" alt="YouTube" class="svg"></a>
             </div>
-            <div class="altair">
-                <a id="LegalLink" onclick="popupsized(this.href, 'yes', '600', '700');return false;" href="http://www.altair.com/popup_privacy.htm">Legal</a> | © Copyright 2016 solidThinking, Inc. All rights reserved.
-            </div>
- <!-- privacy popup script -->
+
+
+</div>
+<!-- /.col-md-4 -->
+</div>
+<!-- /.row -->
+
+
+
+
+
+            
+
+            <!-- privacy popup script -->
             <script type="text/javascript">
                 function popupsized(ff, toscroll, w, h) {
                     window.open(ff, "", "toolbar=no,directories=no,resizable=no,scrollbars=" + toscroll + ",location=no,menubar=no,width=" + w + ",height=" + h + ",top=0,left=0");
@@ -628,16 +688,6 @@ FOOTER
 
 
 
-            <div class="social">
-                <a href="http://www.facebook.com/solidThinking" target="_blank" title="Facebook">
-                    <img src="img/g_social_facebook.png" width="26" height="52" alt="Facebook"></a>
-                <a href="http://twitter.com/solidThinking" target="_blank" title="Twitter">
-                    <img src="img/g_social_twitter.png" width="26" height="52" alt="Twitter"></a>
-                <a href="http://www.linkedin.com/groups/solidThinking-Community-4872249" target="_blank" title="LinkedIn">
-                    <img src="img/g_social_linkedin.png" width="26" height="52" alt="LinkedIn"></a>
-                <a href="http://www.youtube.com/user/solidthinking" target="_blank" title="YouTube">
-                    <img src="img/g_social_youtube.png" width="62" height="52" alt="YouTube"></a>
-            </div>
 
 
 
@@ -653,7 +703,20 @@ FOOTER
 
         <script src="dist/js/plugins.min.js"></script>
         <script src="dist/js/scripts.min.js"></script>
+        
 
+        <script type="text/javascript">
+function downloadJSAtOnload() {
+var element = document.createElement("script");
+element.src = "dist/js/defer.min.js";
+document.body.appendChild(element);
+}
+if (window.addEventListener)
+window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
+</script>
 
 
 

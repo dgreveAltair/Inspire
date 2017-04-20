@@ -12,11 +12,17 @@ module.exports = function(grunt) {
            src: ['src/js/plugins.js'], //input
           dest: 'dist/js/plugins.min.js' //output
         },
+                plugins: {
+           src: ['src/js/defer.js'], //input
+          dest: 'dist/js/defer.min.js' //output
+        },
         scripts: {
            src: ['src/js/scripts.js'], //input
           dest: 'dist/js/scripts.min.js' //output
         }
     },
+
+
 
 
 

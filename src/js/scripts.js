@@ -180,6 +180,35 @@ $(document).ready(function() {
 
 
 
+
+
+
+// If the background is clicked fire the wistia video
+$('#about-altair .row').on('click', function(e) {
+  if (e.target !== this)
+    return;
+ $('#about-altair-video .wistia_click_to_play')[0].click();
+});
+
+
+
+
+
+
+$( "#hpc-appliance" ).click(function() {
+   $('#about-altair-video .wistia_click_to_play')[0].click();
+});
+
+$( "#cloud-bursting" ).click(function() {
+   $('#about-altair-video .wistia_click_to_play')[0].click();
+});
+
+
+$( "#intro-video" ).click(function() {
+   $('#about-altair-video .wistia_click_to_play')[0].click();
+});
+
+
 //----------------------End Document
 });
 

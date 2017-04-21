@@ -247,8 +247,10 @@ width: 150px;
 // --------------------------------------------------
 
 
-.video {position: relative;padding: 0px;}
-.video a {color: #fff;}
+.video {position: relative;padding: 0px;cursor: pointer;}
+.video  {color: #fff;}
+
+.video .img-responsive {width: 100%;}
 
 .video .container { height: 100%;position: absolute;top: 0;left: 0;right: 0;}
 .video-desc {position: absolute;bottom: 20px;}
@@ -284,23 +286,42 @@ margin: auto;
 
 }
 
-
-#company, #about-altair {padding: 4rem 0;}
+#company .container, #about-altair .container  { margin-top: -1px;  }
+#company, #about-altair {padding: 4rem 0;overflow: hidden;}
 
 #company {    
-  background-image: url(https://dummyimage.com/1000x600/000/fff);
+  background-image: url('../../img/company-2000x800.jpg');
+  background-color: #fff;
+  background-position: top left;
+  background-size:  contain;
+}
 
-background-color: #fff;
-      background-position: top left;
-    background-size:  contain;
+
+
+
+
+@media (max-width: 1200px) {
+
+#company {    
+  background-position: top left -100px;
+
 }
 
 
 #about-altair {    
-  background-image: url(../../img/play-button.svg?v=1), url(https://dummyimage.com/1000x600/000/fff);
-      background-position: right 220px top 50%, top right;
-    background-size: 102px 102px, contain;
-    background-color: #eeeeee;
+      background-position: right 220px top 50%, top right -100px!important;
+}
+
+}
+
+
+
+
+#about-altair {    
+  background-image: url(../../img/play-button.svg?v=1), url(../../img/about-altair-2000x800.jpg);
+  background-position: right 220px top 50%, top right;
+  background-size: 102px 102px, contain;
+  background-color: #eeeeee;
 }
 
 #company.company-section .col-md-6 {
@@ -325,6 +346,7 @@ background-color: #fff;
 
 
 
+.navbar-default .navbar-nav > li > .btn-primary {padding: 5px 10px;color: #fff;width: 140px;font-size:  16px;}
 
 
 
@@ -455,7 +477,14 @@ background-color: #fff;
   color: #fff;
 }
 
-#contact #form-col-2 textarea {width: 100%;height: 210px;}
+#contact #form-col-2 textarea {width: 100%;height: 225px;}
+
+
+
+
+
+
+
 
 
 //

@@ -8807,18 +8807,31 @@ http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-insi
   text-align: left;
   background-repeat: no-repeat;
 }
+#company .container,
+#about-altair .container {
+  margin-top: -1px;
+}
 #company,
 #about-altair {
   padding: 4rem 0;
+  overflow: hidden;
 }
 #company {
-  background-image: url(https://dummyimage.com/1000x600/000/fff);
+  background-image: url('../img/company-1500x800.jpg');
   background-color: #fff;
   background-position: top left;
   background-size: contain;
 }
+@media (max-width: 1200px) {
+  #company {
+    background-position: top left -100px;
+  }
+  #about-altair {
+    background-position: right 220px top 50%, top right -100px !important;
+  }
+}
 #about-altair {
-  background-image: url(../../img/play-button.svg?v=1), url(https://dummyimage.com/1000x600/000/fff);
+  background-image: url(../../img/play-button.svg?v=1), url(https://dummyimage.com/1500x800/000/fff?v=2);
   background-position: right 220px top 50%, top right;
   background-size: 102px 102px, contain;
   background-color: #eeeeee;

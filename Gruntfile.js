@@ -32,10 +32,10 @@ module.exports = function(grunt) {
           paths: ["src/less/"],
         compress: false,
         cleancss: true,
-        banner: "/*\r\n--------------------------\r\nEnvision Main Stylesheet\r\n- Custom theme of Bootstrap 3\r\n- sfdss\r\n- sdfsdf\r\n--------------------------\r\n*/",
+        banner: "/*\r\n--------------------------\r\nPBS Cloud Main Stylesheet\r\n- Custom theme of Bootstrap 3\r\n- sfdss\r\n- sdfsdf\r\n--------------------------\r\n*/",
         },
         files: {
-          "dist/css/bootstrap-envision.css": "src/less/styles.less"
+          "dist/css/pbscloud.css": "src/less/styles.less"
         }
       },
     },

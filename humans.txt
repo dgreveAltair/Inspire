@@ -2,7 +2,7 @@
 TEAM
 --------------------------------------
 */
-Web designer: Lena David
+Web designer: Kelly S.
 Company: Altair - http://www.altair.com/
 From: Michigan
 
@@ -15,18 +15,14 @@ Technology
 --------------------------------------
 */
 Uses Grunt to compile Less and javascript
-See _src folder in this directory
-
+See src folder in this directory
 Bootstrap 3 CSS Framework
-Owl Carousel
-Wow CSS animations
-Scroll to Id
 
 /*
 SITE
 --------------------------------------
 */
-Last update:2016/01/08
+Last update:2017/04/24
 Language: English
 Doctype:HTML5
 IDE: Sublime Text

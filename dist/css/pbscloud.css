@@ -8651,6 +8651,9 @@ footer .svg:hover path {
 footer {
   padding: 2em 0;
 }
+.submitted-message {
+  margin-left: 30px;
+}
 .bg-gray-darker {
   background: #474747;
   color: #eeeeee;
@@ -8728,8 +8731,6 @@ footer {
   text-align: center;
 }
 #blue-features h3 {
-  border-top: 1px solid #fff;
-  padding-top: 22px;
   font-size: 18px;
 }
 #blue-features h3:first-child {
@@ -8787,6 +8788,9 @@ footer {
 #pricing p {
   font-size: 12px;
 }
+textarea.hs-input {
+  margin-top: 9px;
+}
 .video {
   position: relative;
   padding: 0px;
@@ -8804,10 +8808,28 @@ footer {
   top: 0;
   left: 0;
   right: 0;
+  text-align: center;
 }
 .video-desc {
-  position: absolute;
-  bottom: 20px;
+  display: none;
+  text-align: center;
+}
+@media (min-width: 400px) {
+  .video-desc {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    font-size: 16px;
+    right: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+@media (min-width: 500px) {
+  .video-desc {
+    font-size: 20px;
+  }
 }
 .video-title {
   position: absolute;
@@ -8835,6 +8857,9 @@ http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-insi
     top: 40px;
   }
 }
+.text-white * {
+  color: #fff!important;
+}
 .company-section {
   background-color: #eeeeee;
   padding: 0px;
@@ -8851,10 +8876,16 @@ http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-insi
   overflow: hidden;
 }
 #company {
-  background-image: url('../../img/company-2000x800.jpg');
+  background-image: url('../../img/company-2000x800.jpg?v=3');
   background-color: #fff;
   background-position: top left;
   background-size: contain;
+}
+#about-altair .p-2 {
+  padding-left: 0px;
+}
+#company .p-2 {
+  padding-right: 0px;
 }
 @media (max-width: 1200px) {
   #company {
@@ -8865,7 +8896,7 @@ http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-insi
   }
 }
 #about-altair {
-  background-image: url(../../img/play-button.svg?v=1), url(../../img/about-altair-2000x800.jpg);
+  background-image: url(../../img/play-button.svg?v=1), url(../../img/about-altair-2000x800.jpg?v=2);
   background-position: right 220px top 50%, top right;
   background-size: 102px 102px, contain;
   background-color: #eeeeee;
@@ -9065,6 +9096,9 @@ http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-insi
 }
 /* Large desktops and laptops */
 @media (min-width: 600px) {
+  textarea.hs-input {
+    margin-top: 0px;
+  }
   .video-btn {
     /*
 http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-div

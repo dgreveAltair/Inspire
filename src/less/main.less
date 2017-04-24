@@ -113,6 +113,10 @@ footer .svg:hover path {
 footer {padding:2em 0;}
 
 
+
+
+.submitted-message {margin-left: 30px;}
+
 //
 // Row Banding
 // --------------------------------------------------
@@ -139,6 +143,7 @@ background-repeat: no-repeat;
   /* LG  */ @media only screen and (min-width : 1200px) {} // background is STILL fixed here.
 
  }
+
 
 
 //
@@ -197,7 +202,7 @@ padding: 0 0 1rem 0;
 // Blue Features
 // --------------------------------------------------
 #blue-features {text-align: center;}
-#blue-features h3 {border-top: 1px solid #fff;padding-top: 22px;font-size: 18px;}
+#blue-features h3 { font-size: 18px;}
 #blue-features h3:first-child {border: none;padding-top: 0px;margin-top: 0px;}
 #blue-features p:last-child {margin-bottom: 0px;}
 
@@ -246,14 +251,55 @@ width: 150px;
 // Video
 // --------------------------------------------------
 
+textarea.hs-input {
+margin-top: 9px;
+}
 
 .video {position: relative;padding: 0px;cursor: pointer;}
 .video  {color: #fff;}
 
 .video .img-responsive {width: 100%;}
 
-.video .container { height: 100%;position: absolute;top: 0;left: 0;right: 0;}
-.video-desc {position: absolute;bottom: 20px;}
+.video .container { height: 100%;position: absolute;top: 0;left: 0;right: 0;text-align: center;}
+
+.video-desc {
+display: none;
+text-align: center;
+}
+
+@media (min-width: 400px) {
+
+  .video-desc {
+    display: block;
+      position: absolute;bottom: 20px;
+  left: 15px;
+  font-size: 16px;
+  right: 15px;
+font-weight: bold;
+text-align: center;
+  }
+
+
+
+
+}
+
+
+@media (min-width: 500px) {
+
+  .video-desc {
+
+  font-size: 20px;
+  }
+
+
+
+
+}
+
+
+
+
 .video-title {position: absolute;top: 20px;margin-top: 0px;}
 .video-btn {
 /*
@@ -276,6 +322,7 @@ margin: auto;
 // Company
 // --------------------------------------------------
 
+.text-white * {color: #fff!important;}
 
 
 .company-section {
@@ -290,15 +337,19 @@ margin: auto;
 #company, #about-altair {padding: 4rem 0;overflow: hidden;}
 
 #company {    
-  background-image: url('../../img/company-2000x800.jpg');
+  background-image: url('../../img/company-2000x800.jpg?v=3');
   background-color: #fff;
   background-position: top left;
   background-size:  contain;
 }
 
+#about-altair .p-2 {
+  padding-left: 0px;
+}
 
-
-
+#company .p-2 {
+  padding-right: 0px;
+}
 
 @media (max-width: 1200px) {
 
@@ -318,7 +369,7 @@ margin: auto;
 
 
 #about-altair {    
-  background-image: url(../../img/play-button.svg?v=1), url(../../img/about-altair-2000x800.jpg);
+  background-image: url(../../img/play-button.svg?v=1), url(../../img/about-altair-2000x800.jpg?v=2);
   background-position: right 220px top 50%, top right;
   background-size: 102px 102px, contain;
   background-color: #eeeeee;
@@ -516,6 +567,11 @@ margin: auto;
 
 /* Large desktops and laptops */
 @media (min-width: 600px) {
+
+
+textarea.hs-input {
+margin-top: 0px;
+}
 
 
 .video-btn {

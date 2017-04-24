@@ -200,12 +200,13 @@ $( "#hpc-appliance" ).click(function() {
 });
 
 $( "#cloud-bursting" ).click(function() {
-   $('#about-altair-video .wistia_click_to_play')[0].click();
+   $('#cloud-bursting-video .wistia_click_to_play')[0].click();
 });
 
 
-$( "#intro-video" ).click(function() {
-   $('#about-altair-video .wistia_click_to_play')[0].click();
+
+$( "#hero-video-trigger" ).click(function() {
+   $('#hero-video .wistia_click_to_play')[0].click();
 });
 
 

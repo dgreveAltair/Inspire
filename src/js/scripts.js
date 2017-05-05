@@ -208,6 +208,13 @@ $( "#hero-video-trigger" ).click(function() {
 });
 
 
+
+
+// external links new window
+jQuery("a[href^='http:']").attr('target','_blank');
+
+
+
 //----------------------End Document
 });
 

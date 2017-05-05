@@ -8571,6 +8571,11 @@ h6,
 .navbar-brand.img {
   padding: 20px 25px;
 }
+@media (max-width: 330px) {
+  .navbar-brand {
+    width: 160px;
+  }
+}
 .navbar-default .navbar-nav > li > a {
   font-size: 18px;
   padding: 42px 20px 20px 20px;
@@ -8590,6 +8595,9 @@ h6,
 .navbar-btn {
   margin-top: 35px;
   margin-bottom: 0;
+}
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
 }
 footer .altair {
   float: left;
@@ -8693,39 +8701,62 @@ footer {
   margin: 0px;
   position: relative;
   padding: 0;
+  height: 300px;
+  background-color: #00b5ef;
 }
-.jumbotron .btn {
-  position: absolute;
-  top: 0;
-  top: calc(2%);
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 50px;
-  width: 150px;
+.jumbotron img {
+  width: 100%!important;
 }
-/* Landscape phones and portrait tablets */
-@media (min-width: 600px) {
-  .jumbotron .btn {
-    top: calc(22%);
-  }
-}
-#tagline {
-  background-color: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-}
-#tagline h1 {
+.jumbotron h1 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  text-align: center;
+  font-size: 30px;
   padding: 0 0 1rem 0;
+  text-transform: uppercase;
+  color: #fff;
+}
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+  top: 15%;
+}
+.jumbotron picture {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .jumbotron p {
   margin: 0px;
+}
+/* Landscape phones and portrait tablets */
+@media (min-width: 600px) {
+  .jumbotron {
+    height: 400px;
+  }
+  .jumbotron h1 {
+    font-size: 50px;
+  }
+}
+/* Landscape phones and portrait tablets */
+@media (min-width: 960px) {
+  .jumbotron .container {
+    top: 30%;
+  }
+  .jumbotron {
+    height: 700px;
+  }
+}
+/* Landscape phones and portrait tablets */
+@media (min-width: 1300px) {
+  .jumbotron {
+    height: 500px;
+  }
+}
+/* Landscape phones and portrait tablets */
+@media (min-width: 1500px) {
+  .jumbotron {
+    height: 550px;
+  }
 }
 #blue-features {
   text-align: center;
@@ -8740,6 +8771,31 @@ footer {
 }
 #blue-features p:last-child {
   margin-bottom: 0px;
+}
+#blue-features .col-md-3 {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+#blue-features .col-md-3:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  #blue-features {
+    padding: 20px 0 0 0;
+  }
+  #blue-features .col-md-3 {
+    border-right: 1px solid #fff;
+    border-bottom: none;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    height: 140px;
+  }
+  #blue-features .col-md-3:last-child {
+    border-right: none;
+    margin-bottom: 0;
+  }
 }
 #key-features h3 {
   font-size: 18px;
@@ -8757,15 +8813,18 @@ footer {
 #pricing .row {
   margin-bottom: 0;
 }
-#pricing .row .col-md-4 {
-  height: 300px;
+#pricing .bg-white {
   background: #fff;
+  height: 300px;
   text-align: center;
   padding: 40px ;
+}
+#pricing .row .col-md-4 {
+  padding: 0;
   margin-bottom: 2rem;
 }
 #pricing .row .col-md-4:last-child {
-  border: none;
+  padding-right: 0;
   margin-bottom: 0px;
 }
 #pricing h2 {
@@ -8835,6 +8894,8 @@ textarea.hs-input {
   position: absolute;
   top: 20px;
   margin-top: 0px;
+  left: 0;
+  right: 0;
 }
 .video-btn {
   /*
@@ -8998,10 +9059,10 @@ http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-insi
   left: 230px;
 }
 .li-2 .megamenu .col-md-6 {
-  left: 345px;
+  left: 355px;
 }
 .li-3 .megamenu .col-md-6 {
-  left: 470px;
+  left: 500px;
 }
 .li-4 .megamenu .col-md-6 {
   left: 600px;
@@ -9091,7 +9152,8 @@ http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-insi
     padding: 0;
   }
   #pricing .row .col-md-4 {
-    border-right: 10px solid #eeeeee;
+    padding-right: 10px;
+    margin-bottom: 0px;
   }
 }
 /* Large desktops and laptops */
@@ -9122,7 +9184,7 @@ http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-insi
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   #pricing .row .col-md-4 {
-    border-right: 10px solid #eeeeee;
+    padding-right: 10px;
     margin-bottom: 0px;
   }
   #key-features .col-sm-4 {

@@ -196,12 +196,10 @@ $('#about-altair .row').on('click', function(e) {
 
 
 $( "#hpc-appliance" ).click(function() {
-   $('#about-altair-video .wistia_click_to_play')[0].click();
+   $('#hpc-appliance-video .wistia_click_to_play')[0].click();
 });
 
-$( "#cloud-bursting" ).click(function() {
-   $('#cloud-bursting-video .wistia_click_to_play')[0].click();
-});
+
 
 
 

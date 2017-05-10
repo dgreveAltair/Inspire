@@ -196,23 +196,18 @@ $('#about-altair .row').on('click', function(e) {
 
 
 $( "#hpc-appliance" ).click(function() {
-   $('#hpc-appliance-video .wistia_click_to_play')[0].click();
+   $('#about-altair-video .wistia_click_to_play')[0].click();
 });
 
-
+$( "#cloud-bursting" ).click(function() {
+   $('#cloud-bursting-video .wistia_click_to_play')[0].click();
+});
 
 
 
 $( "#hero-video-trigger" ).click(function() {
    $('#hero-video .wistia_click_to_play')[0].click();
 });
-
-
-
-
-// external links new window
-jQuery("a[href^='http:']").attr('target','_blank');
-
 
 
 //----------------------End Document

@@ -48,16 +48,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navbar-default .navbar-na
 .navbar-brand.img { padding: @navbar-brand-padding-vertical @navbar-padding-horizontal; }
 
 @media (max-width: 330px) {
-
-.navbar-brand  {width: 160px;}
-
+  .navbar-brand {
+    width: 160px;
+  }
 }
-
 
 
 .navbar-default .navbar-nav>li>a {font-size:18px;padding: 42px 20px 20px 20px; }
 
-.navbar-default .navbar-nav>li>a:focus {color:inherit;}
+
+
+.navbar-collapse  > li > a:focus  {color:#777;}
+
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav a.active {color:@brand-primary;}
 
 
@@ -71,9 +73,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navbar-default .navbar-na
     margin-bottom: 0;
 }
 
-
-.navbar-default .navbar-nav > li > a:focus {color:#fff;}
-
+.navbar-collapse > li > a:focus {
+  color: #fff;
+}
 
 //
 // Footer
@@ -154,91 +156,129 @@ background-repeat: no-repeat;
 
  }
 
-
+.text-white {color: #fff;}
 
 //
 // Jumbotron
 // --------------------------------------------------
 
 
-.jumbotron {margin: 0px;position: relative;padding: 0;height: 300px;
-background-color:@brand-primary ;
+.jumbotron {
+  margin: 0px;
+  position: relative;
+  padding: 0;
+  height: 300px;
+  background-color: #00b5ef;
 }
-.jumbotron img {width: 100%!important;}
+.jumbotron img {
+  width: 100%!important;
+}
 .jumbotron h1 {
-.font-extra-bold;
-font-size: 30px;
-padding: 0 0 1rem 0;
-text-transform: uppercase;
-color: #fff;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 0 0 1rem 0;
+  text-transform: uppercase;
+  color: #fff;
 }
-
-.jumbotron .container {position: relative;
-z-index: 1;top: 15%;}
-
-.jumbotron picture {position: absolute;bottom: 0;width: 100%;}
-
-
-
-.jumbotron p {margin: 0px;}
-
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+  top: 15%;
+}
+.jumbotron picture {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.jumbotron p {
+  margin: 0px;
+}
 /* Landscape phones and portrait tablets */
 @media (min-width: 600px) {
-
-.jumbotron {height: 400px;}
-
-.jumbotron h1 {
-
-font-size: 50px;
+  .jumbotron {
+    height: 400px;
+  }
+  .jumbotron h1 {
+    font-size: 50px;
+  }
 }
-
-}
-
 /* Landscape phones and portrait tablets */
 @media (min-width: 960px) {
-
-.jumbotron .container {top: 30%;}
-
-.jumbotron {height: 700px;}
+  .jumbotron .container {
+    top: 30%;
+  }
+  .jumbotron {
+    height: 700px;
+  }
 }
-
-
 /* Landscape phones and portrait tablets */
 @media (min-width: 1300px) {
-
-
-.jumbotron {height: 500px;}
+  .jumbotron {
+    height: 500px;
+  }
 }
-
 /* Landscape phones and portrait tablets */
 @media (min-width: 1500px) {
-
-
-.jumbotron {height: 720px;}
+  .jumbotron {
+    height: 600px;
+  }
 }
+
+@media (min-width: 1800px) {
+  .jumbotron {
+    height: 700px;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 //
 // Blue Features
 // --------------------------------------------------
 #blue-features {text-align: center;}
-#blue-features .container {margin-top: -30px;}
+
+#blue-features .container {
+  margin-top: -30px;
+}
+
 #blue-features h3 { font-size: 18px;}
 #blue-features h3:first-child {border: none;padding-top: 0px;margin-top: 0px;}
 #blue-features p:last-child {margin-bottom: 0px;}
-#blue-features .col-md-3 {border-bottom: 1px solid #fff; margin-bottom: 2rem;padding-bottom: 2rem;}
-#blue-features .col-md-3:last-child {border-bottom: none;margin-bottom: 0;}
 
 
-
-
-@media (min-width: 992px) {
-#blue-features {    padding: 0 0 0 0;}
-#blue-features .col-md-3 {border-right: 1px solid #fff;border-bottom: none; margin-bottom: 2rem;padding-top: 2rem;height: 140px;}
-#blue-features .col-md-3:last-child {border-right: none;margin-bottom: 0;}
-
+#blue-features .col-md-3 {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
-
+#blue-features .col-md-3:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  #blue-features {
+    padding: 0 0 0 0;
+  }
+  #blue-features .col-md-3 {
+    border-right: 1px solid #fff;
+    border-bottom: none;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    height: 140px;
+  }
+  #blue-features .col-md-3:last-child {
+    border-right: none;
+    margin-bottom: 0;
+  }
+}
 
 
 //
@@ -256,30 +296,23 @@ font-size: 50px;
   margin-bottom: 3rem;
 }
 
-
-
-
-
-
-
 //
 // Pricing
 // --------------------------------------------------
 
 #pricing .row {margin-bottom:0;}
-#pricing .bg-white {background: #fff;
+
+#pricing .bg-white {
+  background: #fff;
   height: 300px;
   text-align: center;
-  padding:40px ;
+  padding: 40px ;
 }
 #pricing .row .col-md-4 {
-
   padding: 0;
-
   margin-bottom: 2rem;
-
 }
-#pricing .row .col-md-4:last-child {padding-right:0;margin-bottom: 0px;}
+#pricing .row .col-md-4:last-child {padding-right: 0;margin-bottom: 0px;}
 #pricing h2 {font-size:22px;color:@brand-primary;margin: 0px 0 40px 0;}
 #pricing h3 {font-size:20px;text-transform: uppercase;}
 #pricing .btn {position: absolute;bottom: 22px;margin: 0 auto;left: 0;right: 0;
@@ -341,14 +374,24 @@ text-align: center;
 
 
 
-.video-title {position: absolute;top: 20px;margin-top: 0px;left: 0;right: 0;}
+
+
+.video-title {position: absolute;top: 20px;margin-top: 0px;
+  left: 0;
+  right: 0;
+
+}
 .video-btn {
 /*
 http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-div
 */
   position: absolute;top:0;bottom: 0;
 margin: auto;
-  left: 0;right: 0;width: 50px;height: 50px;}
+  left: 0;right: 0;width: 100px;height: 100px;
+opacity: .8;
+  -webkit-filter: drop-shadow(5px 5px 8px #444);
+  filter: drop-shadow(5px 5px 8px #444);
+}
 
 
 
@@ -598,9 +641,8 @@ margin: auto;
 
 
 #pricing .row .col-md-4 {
-
-  padding-right: 10px;
-  margin-bottom: 0px;
+ padding-right: 10px;
+    margin-bottom: 0px;
 
 }
 
@@ -661,7 +703,6 @@ font-size: 36px;
 #pricing .row .col-md-4 {
   padding-right: 10px;
   margin-bottom: 0px;
-
 }
 
 
@@ -671,19 +712,4 @@ font-size: 36px;
 }
 
 
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-

@@ -24,18 +24,16 @@ module.exports = function(grunt) {
 
 
 
-
-
     less: {
       development: {
         options: {
           paths: ["src/less/"],
-        compress: false,
-        cleancss: true,
-        banner: "/*\r\n--------------------------\r\nPBS Cloud Main Stylesheet\r\n- Custom theme of Bootstrap 3\r\n- sfdss\r\n- sdfsdf\r\n--------------------------\r\n*/",
+        compress: true,
+        cleancss: false,
+        banner: "/* PBS Cloud Main Stylesheet - Edit CSS with LESS source files using Grunt - Repo: https://github.com/JacobLett/pbscloud.io */",
         },
         files: {
-          "dist/css/pbscloud.css": "src/less/styles.less"
+          "dist/css/pbscloud.min.css": "src/less/styles.less"
         }
       },
     },

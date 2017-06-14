@@ -64,14 +64,14 @@ module.exports = function(grunt) {
     // END GRUNT
 
 
-  // Load the plugin that provides the "uglify" task.
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-less');
- grunt.loadNpmTasks('grunt-contrib-watch');
- //grunt.loadNpmTasks('grunt-sftp-deploy');
+    // Load the plugin that provides the "uglify" task.
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    //grunt.loadNpmTasks('grunt-sftp-deploy');
 
 
-  // Default task(s).
+    // Default task(s).
     grunt.registerTask('default', ['less']);
 
 

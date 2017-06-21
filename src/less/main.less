@@ -32,7 +32,7 @@ section { position: relative; padding:40px 0 40px 0; }
 
 
 // Is your navbar fixed?
-body { padding-top: 70px; }
+body { padding-top:145px; }
 
 
 
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .navbar-default .navbar-na
 }
 
 
-.navbar-default .navbar-nav>li>a {font-size:18px;padding: 42px 20px 20px 20px; }
+.navbar-default .navbar-nav>li>a {font-size:18px;padding: 42px 20px 20px 20px; font-weight: 400;}
 
 
 
@@ -99,7 +99,7 @@ footer .social a { display: block;
 display: inline-block;
 *display: inline;
 *zoom: 1;
- overflow: hidden; 
+ overflow: hidden;
 margin: 0 .5rem;
 
   }
@@ -144,7 +144,7 @@ footer {padding:2em 0;}
 
 background-position: center center;
 background-repeat: no-repeat;
--webkit-background-size: cover; -moz-background-size: cover; 
+-webkit-background-size: cover; -moz-background-size: cover;
 -o-background-size: cover; background-size: cover;
 
   // background fixed and background cover don't play nicely together on iOS. So background is fixed only on desktops.
@@ -167,55 +167,65 @@ background-repeat: no-repeat;
   margin: 0px;
   position: relative;
   padding: 0;
-  height: 300px;
+  height: 600px;
   background-color: #00b5ef;
+  overflow:hidden; //help set body padding
+  background: url(../../img/Inspirecloud-800.jpg) top left;
+  background-size:cover;
 }
-.jumbotron img {
+.jumbotron picture img { // added picture to allow for video play button
   width: 100%!important;
+  display: none;
 }
 .jumbotron h1 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 30px;
-  padding: 0 0 1rem 0;
-  text-transform: uppercase;
+  padding: 0 0 173px 0;
+  text-transform: capitalize;
+  text-align: center;
   color: #fff;
 }
 .jumbotron .container {
   position: relative;
   z-index: 1;
-  top: 15%;
+  top: 1%;
 }
 .jumbotron picture {
   position: absolute;
-  bottom: 0;
+  top: 0;
   width: 100%;
 }
 .jumbotron p {
   margin: 0px;
+  font-size: 16px;
+  text-align: center;
 }
 /* Landscape phones and portrait tablets */
 @media (min-width: 600px) {
   .jumbotron {
-    height: 400px;
+    height: 630px;
+    background: url(../../img/Inspirecloud-1020.jpg) top left;
+    background-size: cover;
   }
   .jumbotron h1 {
     font-size: 50px;
+    padding: 0 0 280px 0;
   }
 }
 /* Landscape phones and portrait tablets */
 @media (min-width: 960px) {
   .jumbotron .container {
-    top: 30%;
+    top: 8%;
   }
   .jumbotron {
-    height: 700px;
+    height: 600px;
   }
 }
 /* Landscape phones and portrait tablets */
 @media (min-width: 1300px) {
   .jumbotron {
-    height: 500px;
+    height: 576px;
   }
 }
 /* Landscape phones and portrait tablets */
@@ -392,8 +402,7 @@ margin: auto;
   -webkit-filter: drop-shadow(5px 5px 10px #444);
   filter: drop-shadow(5px 5px 10px #444);
 }
-
-
+.jumbotron .video-btn {top:-130px;}
 
 @media (min-width: 500px) {
 .video-desc {bottom: 40px;}
@@ -420,7 +429,7 @@ margin: auto;
 #company .container, #about-altair .container  { margin-top: -1px;  }
 #company, #about-altair {padding: 4rem 0;overflow: hidden;}
 
-#company {    
+#company {
   background-image: url('../../img/company-2000x800.jpg?v=3');
   background-color: #fff;
   background-position: top left;
@@ -437,13 +446,13 @@ margin: auto;
 
 @media (max-width: 1200px) {
 
-#company {    
+#company {
   background-position: top left -100px;
 
 }
 
 
-#about-altair {    
+#about-altair {
       background-position: right 220px top 50%, top right -100px!important;
 }
 
@@ -452,7 +461,7 @@ margin: auto;
 
 
 
-#about-altair {    
+#about-altair {
   background-image: url(../../img/play-button.svg?v=1), url(../../img/about-altair-2000x800.jpg?v=2);
   background-position: right 220px top 50%, top right;
   background-size: 102px 102px, contain;
@@ -461,7 +470,7 @@ margin: auto;
 
 #company.company-section .col-md-6 {
     background-color: #fff;
-   
+
 }
 
 #about-altair.company-section .col-md-6 {
@@ -671,10 +680,11 @@ margin: auto;
   left: 0;right: 0;width: 115px;height: 115px;}
 
 
-
+.jumbotron .video-btn {top:0;}
 
 
 }
+
 
 
 

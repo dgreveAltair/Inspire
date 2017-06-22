@@ -2,11 +2,11 @@
 TEAM
 --------------------------------------
 */
-Web designer: Kelly S.
+Web designer: Alicia S.
 Company: Altair - http://www.altair.com/
 From: Michigan
 
-UI developer: Jacob Lett
+UI developer: Dale Greve
 Company: Altair - http://www.altair.com/
 From: Michigan
 
@@ -22,7 +22,7 @@ Bootstrap 3 CSS Framework
 SITE
 --------------------------------------
 */
-Last update:2017/04/24
+Last update:2017/06/22
 Language: English
 Doctype:HTML5
-IDE: Sublime Text
+IDE: Atom

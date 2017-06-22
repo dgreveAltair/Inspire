@@ -1,10 +1,10 @@
 $(document).ready(function(){
-  
+
 
 /*
 Set active link on click
  $(".navbar-nav a").click(function() {  //use a class, since your ID gets mangled
-    $(".navbar-nav a").removeClass("active"); 
+    $(".navbar-nav a").removeClass("active");
 
     $(this).addClass("active");      //add the class to the clicked element
   });
@@ -62,7 +62,7 @@ var w = 0;
 $( window ).load( function(){
     w = $( window ).width();
 
-    
+
 
 
 });
@@ -195,7 +195,7 @@ $('#about-altair .row').on('click', function(e) {
 
 
 
-$( "#hpc-appliance" ).click(function() {
+$( "#inspireOverview" ).click(function() {
    $('#about-altair-video .wistia_click_to_play')[0].click();
 });
 
@@ -212,9 +212,3 @@ $( "#hero-video-trigger" ).click(function() {
 
 //----------------------End Document
 });
-
-
-
-
-
-

@@ -3,6 +3,9 @@
 // Font Mixins
 // --------------------------------------------------
 
+
+//--- Smooth font ---//
+
 .font-bold {
     font-family: @font-base;
     font-weight: 600;
@@ -181,10 +184,11 @@ background-repeat: no-repeat;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 30px;
-  padding: 0 0 173px 0;
+  padding: 0;
   text-transform: capitalize;
   text-align: center;
   color: #fff;
+  margin:10px 0 30px;
 }
 .jumbotron .container {
   position: relative;
@@ -196,6 +200,11 @@ background-repeat: no-repeat;
   top: 0;
   width: 100%;
 }
+
+.jumbotron .video-btn {
+ margin-bottom:30px;
+}
+
 .jumbotron p {
   margin: 0px;
   font-size: 16px;
@@ -210,9 +219,25 @@ background-repeat: no-repeat;
   }
   .jumbotron h1 {
     font-size: 50px;
-    padding: 0 0 280px 0;
+    margin: 60px 0;
+  }
+  .jumbotron .video-btn {
+   margin-bottom:60px;
   }
 }
+
+@media (min-width: 740px) {
+  .jumbotron h1 {
+    font-size: 50px;
+    margin: 90px 0;
+  }
+  .jumbotron .video-btn {
+   margin-bottom:90px;
+  }
+}
+
+
+
 /* Landscape phones and portrait tablets */
 @media (min-width: 960px) {
   .jumbotron .container {
@@ -300,7 +325,7 @@ background-repeat: no-repeat;
   font-size: 18px;
   color: @brand-primary;
 }
-#key-features p {padding: 0 10%;}
+#key-features p {padding: 0 0;}
 
 #key-features h2 {font-size: 30px;}
 
@@ -330,7 +355,7 @@ background-repeat: no-repeat;
 #pricing .btn {position: absolute;bottom: 22px;margin: 0 auto;left: 0;right: 0;
 width: 150px;
 }
-#pricing p {font-size:12px;}
+#pricing p {font-size:16px;}
 
 
 //
@@ -352,6 +377,7 @@ margin-top: 9px;
 display: none;
 text-align: center;
 }
+
 
 @media (min-width: 400px) {
 
@@ -384,34 +410,28 @@ text-align: center;
 }
 
 
-
-
-
-
-.video-title {position: absolute;top: 20px;margin-top: 0px;
-  left: 0;
-  right: 0;
-
+.video-title {
+  font-size: 34px;
+  bottom: 0;
+  margin: 14% auto 20px;
 }
 .video-btn {
-/*
-http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-div
-*/
-  position: absolute;top:0;bottom: 0;
-margin: auto;
-  left: 0;right: 0;width: 100px;height: 100px;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  display: block;
 
   -webkit-filter: drop-shadow(5px 5px 10px #444);
   filter: drop-shadow(5px 5px 10px #444);
 }
-.jumbotron .video-btn {top:-130px;}
 
-@media (min-width: 500px) {
-.video-desc {bottom: 40px;}
-.video-title {top: 40px;}
+
+@media (min-width: 600px) {
+  .video-desc {bottom: 40px;}
+  .video-title {
+  font-size: 46px;
+  }
 }
-
-
 
 //
 // Company
@@ -432,8 +452,9 @@ margin: auto;
 #company, #about-altair {padding: 4rem 0;overflow: hidden;}
 
 #company {
+  background-image: url('../../img/about-solidWorks-900x400.jpg?v=3');
   background-color: #fff;
-  background-position: top left;
+  background-position: top right;
   background-size:  contain;
 }
 
@@ -448,7 +469,7 @@ margin: auto;
 @media (max-width: 1200px) {
 
 #company {
-  background-position: top left -100px;
+  background-position: top right -100px;
 
 }
 
@@ -673,15 +694,13 @@ margin-top: 0px;
 
 
 .video-btn {
-/*
-http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-div
-*/
-  position: absolute;top:0;bottom: 0;
-margin: auto;
-  left: 0;right: 0;width: 115px;height: 115px;}
+  margin: auto;
+  display: block;
+  width: 115px;
+  height: 115px;
+}
 
 
-.jumbotron .video-btn {top:0;}
 
 
 }

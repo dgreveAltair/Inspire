@@ -29,7 +29,7 @@ $("#company-icons a").hover(function(){
 
 
 $("a[href*='#'], a[href*='#top'], a[href*='#product'], a[href*='#features'], a[href*='#demo'], a[href*='#pricing'], a[href*='#company'], a[href*='#access']").mPageScroll2id({
-    offset:80
+    offset:142
 });
 
 

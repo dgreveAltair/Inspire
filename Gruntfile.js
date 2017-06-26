@@ -30,10 +30,10 @@ module.exports = function(grunt) {
           paths: ["src/less/"],
         compress: true,
         cleancss: false,
-        banner: "/* PBS Cloud Main Stylesheet - Edit CSS with LESS source files using Grunt - Repo: https://github.com/JacobLett/pbscloud.io */",
+        banner: "/* PBS Cloud Main Stylesheet - Edit CSS with LESS source files using Grunt - Repo: https://github.com/dgreveAltair/Inspire.git */",
         },
         files: {
-          "dist/css/pbscloud.min.css": "src/less/styles.less"
+          "dist/css/inspireUnltd.min.css": "src/less/styles.less"
         }
       },
     },
